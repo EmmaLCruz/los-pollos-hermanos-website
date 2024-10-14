@@ -1,0 +1,606 @@
+@media (max-width: 1200px) {
+  /* -- Navegación -- */
+  .main-nav__container {
+    gap: 7vw;
+  }
+
+  /* -- Testimonios -- */
+  .carousel__details{
+    width: 90%;
+  }
+
+  /* -- Newsletter -- */
+  .form__title{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1172px) {
+  /* -- Combos -- */
+  .flier__title{
+    font-size: 48px;
+  }
+
+  .flier__paragraph{
+    font-size: 18px;
+    line-height: var(--line-height-base);
+  }
+
+  .flier__price{
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 1100px) {
+  /* -- Navegación -- */
+  .main-nav__container{
+    gap: 5vw;
+  }
+
+  .main-nav__logo-img{
+    width: 128px;
+  }
+
+  .main-nav__menu-list {
+    gap: var(--spacing-sm);
+  }
+
+  .main-nav__order-box-text{
+    font-size: 14px;
+  }
+
+  .main-nav__order-box-link{
+    font-size: 22px;
+  }
+  
+  /* -- Hero -- */
+  .hero__title {
+    font-size: 18px;
+  }
+
+  .hero__subtitle {
+    font-size: 64px;
+  }
+
+  .hero__paragraph {
+    font-size: 18px;
+  }
+
+  .hero__img{
+    width: 340px;
+  }
+
+  /* -- Vegetariana -- */
+  .widget{
+    padding: 56px;
+  }
+
+  .btn--red{
+    font-size: 14px;
+    padding-inline: 2px;
+    height: 48px;
+    width: 180px;
+    letter-spacing: 2px;
+  }
+  
+  .widget__title{
+    font-size: 24px;
+  }
+
+  .widget__subtitle{
+    font-size: 58px;
+  }
+
+  .widget__details-price{
+    font-size: 68px;
+    width: 180px;
+  }
+
+  .widget__details-data {
+    font-size: var(--font-size-base);
+  }
+
+  .widget__copy{
+    gap: var(--spacing-sm);
+  }
+
+  .widget__image img{
+    width: 270px;
+  }
+
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 48px;
+  }
+
+  .flier__title{
+    font-size: 44px;
+  }
+
+  .flier__paragraph{
+    line-height: 1.4;
+  }
+
+  .flier__price{
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* -- Navegación -- */
+  .main-nav__container {
+    width: var(--content-width);
+  }
+
+  .main-nav__logo-img {
+    width: 120px;
+  }
+
+  .main-nav__menu {
+    display: none;
+  }
+
+  .main-nav__order {
+    display: none;
+  }
+
+  .main-nav__modal {
+    display: block;
+  }
+
+  /* -- Wave -- */
+  .wave{
+    background-image: none;
+  }
+
+  /* -- Hero -- */
+  .hero__img {
+    width: 320px;
+  }
+
+  /* -- Productos -- */
+  .products__cards{
+    justify-content: center;
+  }
+
+  /* -- Vegetariana -- */
+  .widget__title {
+    font-size: 20px;
+  }
+
+  .widget__title::after {
+    left: 26vw;
+  }
+
+  .widget__subtitle {
+    font-size: 56px;
+  }
+
+  .widget__image img{
+    width: 260px;
+  }
+
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 44px;
+  }
+
+  .flier__title{
+    font-size: 40px;
+  }
+
+  .flier__price{
+    font-size: 48px;
+  }
+
+  /* -- Delivery -- */
+  .delivery__subtitle{
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* -- Footer -- */
+  .footer__content{
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .footer__contact-info,
+  .footer__opening-hour{
+    max-width: 70%;
+    margin-top: 0;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .footer__days li{
+    gap: 56px;
+  }
+
+  .footer__days span{
+    margin-left: 0;
+  }
+
+  .footer__title::after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer__background-image img{
+    opacity: .1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* -- Estilos Principales -- */
+  .contenedor-spaced{
+    padding: 0 4vw;
+  }
+
+  /* -- Navegación -- */
+  .main-nav__logo-img {
+    width: 110px;
+  }
+
+  /* -- Hero -- */
+  .hero__item {
+    margin-block: 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: var(--spacing-lg);
+  }
+
+  .hero__text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__content-img {
+    text-align: center;
+  }
+
+  .hero__img {
+    width: 300px;
+  }
+
+  /* -- Vegetariana -- */
+  .vegetarian__item{
+    justify-content: center;
+  }
+
+  .widget {
+    width: 100%;
+    padding: 46px;
+  }
+
+  .widget__image img{
+    width: 200px;
+  }
+
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 40px;
+  }
+
+  /* -- Testimonios -- */
+  .testimonials__title {
+    font-size: 28px;
+  }
+
+  .testimonials__details{
+    width: 96%;
+    padding-inline: var(--spacing-lg);
+  }
+
+  .carousel__copy{
+    font-size: 18px;
+  }
+
+  .carousel__image img{
+    width: 100px;
+  }
+
+  /* -- Delivery -- */
+  .delivery__item{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .delivery__img--moto{
+    margin: 0 auto;
+  }
+
+  .delivery__img--moto img{
+    width: 80vw;
+  }
+
+  .delivery__img--hand-cellphone img{
+    width: 180px;
+  }
+
+  .delivery__details{
+    max-height: fit-content;
+    min-width: 90vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* -- Newsletter -- */
+  .newsletter__form{
+    flex-direction: column;
+  }
+
+  .form__title{
+    text-align: center;
+  }
+
+  .form__paragraph{
+    text-align: center;
+  }
+
+  .form__body {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+  }
+
+  .form__input{
+    width: 100%;
+  }
+}
+
+@media (max-width: 682px) {
+  /* -- Productos -- */
+  .products__details {
+    padding: 40px 0 24px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .products__title {
+    font-size: var(--font-size-h2);
+  }
+
+  .products__description {
+    font-size: 18px;
+  }
+
+  /* -- Vegetariana -- */
+  .widget{
+    grid-template-areas:
+        "uptitle uptitle"
+        "title title"
+        "price paragraph"
+        "button ...";
+    grid-template-columns: repeat(2, auto);
+    padding-inline: 24px;
+  }
+  .widget__btn{
+    margin: 48px 0 8px;
+  }
+
+  .widget__subtitle {
+    font-size: 52px;
+  }
+
+  .widget__image img {
+    width: 160px;
+  }
+
+  .widget__details-price {
+    width: 160px;
+    font-size: 56px;
+  }
+
+  .widget__details-data {
+    font-size: 14px;
+  }
+
+  .widget__copy > span {
+    font-size: 14px;
+  }
+
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 36px;
+  }
+
+  .combos__title--red{
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  /* -- Contenedores -- */
+  .contenedor-spaced{
+    padding: 0 1vw;
+  }
+
+  /* -- Navegación -- */
+  .main-nav {
+    height: 3.5rem;
+  }
+
+  .main-nav__logo-img {
+    width: 90px;
+  }
+
+  /* -- Hero -- */
+  .hero__item {
+    padding-top: 28px;
+    row-gap: var(--spacing-md);
+  }
+
+  .hero__subtitle {
+    font-size: 36px;
+  }
+
+  .hero__paragraph {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-heading);
+  }
+
+  .hero__img {
+    width: 240px;
+  }
+
+  /* -- Productos -- */
+  .card{
+    min-width: 72%;
+  }
+
+  /* -- Botones -- */
+  .btn{
+    height: 48px;
+    width: 180px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .btn__add-to-cart{
+    width: var(--content-width);
+    height: 40px;
+  }
+
+  /* -- Vegetariana -- */
+  .widget {
+    margin-block: var(--spacing-lg);
+    width: 96%;
+    row-gap: .75rem;
+  }
+
+  .widget__subtitle {
+    font-size: 46px;
+  }
+
+  .widget__copy{
+    margin-left: 16px;
+  }
+
+  /* -- Combos -- */
+  .flier__details{
+    text-align: center;
+    align-items: center;
+  }
+
+  .combos__title{
+    font-size: 26px;
+  }
+
+  .flier__price{
+    font-size: 40px;
+  }
+
+  /* -- Testimonios -- */
+  .testimonials__details{
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .carousel__details{
+    width: 100%;
+  }
+
+  .slick-dots{
+    margin-top: var(--spacing-sm);
+  }
+
+  /* -- Delivery -- */
+  .delivery__title{
+    font-size: var(--font-size-base);
+  }
+
+  .delivery__subtitle{
+    font-size: 32px;
+  }
+
+  /* -- Newsletter -- */
+  .newsletter__form {
+    padding-inline: 24px;
+  }
+
+  .form__title{
+    font-size: 28px;
+  }
+
+  /* -- Footer -- */
+  .footer__background-image{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* -- Vegetariana -- */
+  .widget__title::after {
+    left: 9rem;
+  }
+
+  .widget__subtitle {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .widget__details-price {
+    width: 100px;
+    margin-bottom: 0;
+  }
+
+  .btn--red{
+    font-size: 12px;
+    height: 38px;
+    width: 152px;
+    letter-spacing: 1px;
+  }
+
+  /* -- Combos -- */
+  .flier{
+    min-width: 380px;
+  }
+
+  /* -- Testimonios -- */
+  .testimonials__details,
+  .carousel__details{
+    gap: 40px;
+  }
+
+  .carousel__title{
+    font-size: 22px;
+  }
+
+  .carousel__image{
+    margin-top: 22px;
+  }
+
+  /* -- Newsletter -- */
+  .newsletter__cards--content{
+    justify-content: center;
+  }
+
+  .drawn-card{
+    align-items: center;
+  }
+  
+  .drawn-card,
+  .newsletter__form{
+    max-width: 368px;
+    margin: 0 auto;
+  }
+
+  .drawn-card__title{
+    min-height: fit-content;
+  }
+
+  .drawn-card__paragraph{
+    width: 76%;
+  }
+
+  /* -- Footer -- */
+  .footer__contact-info,
+  .footer__opening-hour{
+    max-width: 90%;
+  }
+
+  .footer__paragraph{
+    width: 72%;
+  }
+}
