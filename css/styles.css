@@ -306,7 +306,7 @@ a{
   overflow: hidden;
   position: absolute;
   width: var(--content-width);
-  background-image: url("/img/backgrounds/wave.png");
+  background-image: url("../img/backgrounds/wave.png");
   height: 30px;
   background-repeat: repeat-x;
   animation: wave-movement 20s linear infinite;
@@ -330,7 +330,7 @@ a{
 .hero{
   width: var(--content-width);
   height: fit-content;
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("/img/backgrounds/red-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../img/backgrounds/red-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -411,7 +411,7 @@ a{
 .products{
   content-visibility: auto;
   height: fit-content;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("/img/backgrounds/yellow.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("../img/backgrounds/yellow.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -598,7 +598,7 @@ a{
   content-visibility: auto;
   width: var(--content-width);
   height: fit-content;
-  background-image: url("/img/backgrounds/hand-drawn-chalkboard.jpg");
+  background-image: url("../img/backgrounds/hand-drawn-chalkboard.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -863,13 +863,13 @@ a{
 
 .testimonials{
   content-visibility: auto;
-  background-image: url("/img/testimonials/testimonial-background.jpg");
+  background-image: url("../img/testimonials/testimonial-background.jpg");
   display: flex;
 }
 
 .testimonials__item {
   flex: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("/img/testimonials/testimonial-img.png");
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/testimonials/testimonial-img.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
