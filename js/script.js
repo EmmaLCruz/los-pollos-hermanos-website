@@ -2,6 +2,16 @@ const menuBar = document.getElementById("menu-bar");
 const menuPrincipal = document.querySelector(".main-nav__menu");
 const menuEstilos = document.querySelector(".main-nav__menu-list");
 const subMenues = document.querySelectorAll(".main-nav__sub-menu");
+const menuSecciones = document.querySelectorAll(".main-nav__sub-menu-item");
+
+menuSecciones.forEach((seccion) => {
+  seccion.addEventListener("click", closeMenu);
+});
+
+function closeMenu() {
+  menuPrincipal.classList.remove("visible");
+  menuEstilos.classList.remove("active");
+}
 
 menuBar.addEventListener("click", (event) => {
   event.stopPropagation();
