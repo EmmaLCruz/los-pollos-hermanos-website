@@ -160,6 +160,7 @@ a{
 .main-nav__menu{
   font-weight: 700;
   height: var(--content-height);
+  transition: height 1s var(--transition-easing), opacity var(--transition-duration) var(--transition-easing);
 }
 
 .main-nav__menu-list {
@@ -200,6 +201,7 @@ a{
   left: 0;
   margin-left: 0;
   overflow: hidden;
+
 }
 
 .active > li{
@@ -222,7 +224,8 @@ a{
 
 .sub-menu--active {
   display: none;
-  background-color: #000;
+  background-color: #7b0000;
+  border-bottom: 3px solid var(--color-secondary);
   top: 32px;
   width: 100%;
   left: 0;
