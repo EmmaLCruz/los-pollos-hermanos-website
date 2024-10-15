@@ -20,6 +20,20 @@ function handleSubmenuClick(event) {
   let subMenu = item.querySelector(".sub-menu--active");
   let arrows = item.querySelector(".material-symbols-outlined");
 
+  // Cerrar otros submenús abiertos
+  subMenues.forEach((otherSubMenu) => {
+    if (otherSubMenu !== subMenu) {
+      otherSubMenu.style.display = "none"; // Cierra el submenú si no es el que se está abriendo
+      otherSubMenu.parentNode.style.height = "auto"; // Resetea la altura del contenedor del submenú
+      const otherArrows = otherSubMenu.parentNode.querySelector(
+        ".material-symbols-outlined"
+      );
+      if (otherArrows) {
+        otherArrows.style.transform = "rotate(-90deg)"; // Rota la flecha
+      }
+    }
+  });
+
   if (!subMenu) console.log("No se encontró submenú"); // Si no hay submenú, no se hace nada
 
   if (subMenu.style.display === "flex") {
