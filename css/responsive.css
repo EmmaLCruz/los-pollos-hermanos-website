@@ -165,6 +165,10 @@
     display: none;
   }
 
+  .main-nav__menu-list-item-link{
+    width: 100%;
+  }
+
   /* -- Wave -- */
   .wave{
     background-image: none;
