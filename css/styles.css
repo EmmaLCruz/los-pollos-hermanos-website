@@ -110,10 +110,6 @@ a{
   z-index: 500;
 }
 
-.up-btn a{
-  text-decoration: none;
-}
-
 .up-btn-key {
   color: var(--color-text-light);
   background-color: var(--color-primary);
@@ -173,12 +169,42 @@ a{
   height: var(--content-height);
 }
 
+.main-nav__menu-img{
+  display: none;
+  justify-content: center;
+  margin: 60px auto 24px;
+  width: 112px;
+}
+
+.main-nav__menu-img img{
+  width: 100%;
+}
+
 .main-nav__menu-list-item {
   display: flex;
   align-items: center;
-  list-style: none;
   height: var(--content-height);
   padding-inline: .3rem;
+
+  position: relative; /* agregada para arreglar top de su hijo */
+}
+
+.active {
+  background-color: var(--color-primary);
+  /* position: absolute; */
+  position: fixed;
+  flex-direction: column;
+  z-index: 10;
+  height: fit-content;
+  width: 40vh;
+  left: 0;
+  margin-left: 0;
+  /* overflow: hidden; */
+}
+
+.active > li{
+  border-bottom: 3px solid var(--color-secondary);
+  align-items: start;
 }
 
 .main-nav__sub-menu {
@@ -191,6 +217,30 @@ a{
   margin-left: -14px;
   background-color: var(--color-primary);
   border-top: 3px solid var(--color-secondary);
+}
+
+.sub-menu--active {
+  display: none;
+  background-color: #000;
+  top: 24px;
+  width: 100%;
+  left: 0;
+  margin-left: 0;
+}
+
+.main-nav__menu.visible{
+  display: flex;
+}
+
+.main-nav__menu.visible::after{
+  content: "";
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .main-nav__sub-menu-item {
@@ -1408,6 +1458,17 @@ a{
 }
 
 /* Fin: Footer */
+
+/* Modificador Botón de Navbar */
+
+.main-nav__menu-btn {
+  display: none;
+  text-transform: none;
+  margin-top: -8px;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: var(--font-size-p);
+}
 
 /* Animaciones */
 

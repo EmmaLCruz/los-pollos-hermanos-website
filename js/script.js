@@ -1,15 +1,58 @@
 const menuBar = document.getElementById("menu-bar");
-const subMenu = document.getElementById("sub-menu");
 const menuPrincipal = document.querySelector(".main-nav__menu");
+const menuEstilos = document.querySelector(".main-nav__menu-list");
+const subMenues = document.querySelectorAll(".main-nav__sub-menu");
 
 menuBar.addEventListener("click", () => {
-  console.log("Menú bar");
-  if (subMenu.style.display === "block") {
-    subMenu.style.display = "none";
-    menuPrincipal.style.display = "none";
+  menuPrincipal.classList.toggle("visible");
+  menuEstilos.classList.toggle("active");
+
+  setTimeout(() => {
+    document.addEventListener("click", handleClickOutside, { once: true }, 500);
+  });
+
+  if (menuPrincipal.style.display == "flex") {
+    // menuPrincipal.style.display = "none";
+
+    subMenues.forEach((subMenu) =>
+      subMenu.classList.remove("sub-menu--active")
+    );
   } else {
-    subMenu.style.display = "block";
-    menuPrincipal.style.display = "flex";
+    // menuPrincipal.classList.add("visible");
+    // menuEstilos.classList.add("active");
+    subMenues.forEach((subMenu) => subMenu.classList.add("sub-menu--active"));
+
+    let activeElements = document.querySelectorAll(
+      ".active .main-nav__menu-list-item"
+    );
+
+    activeElements.forEach((item) => {
+      item.addEventListener("click", () => {
+        let subMenuesHidden = item.querySelector(".sub-menu--active");
+        let arrows = item.querySelector(".material-symbols-outlined");
+        let heightEl;
+
+        if (subMenuesHidden.style.display == "flex") {
+          subMenuesHidden.style.display = "none";
+          item.style.height = "auto";
+          arrows.style.transform = "rotate(-90deg)";
+        } else {
+          subMenuesHidden.style.display = "flex";
+          heightEl = subMenuesHidden.scrollHeight;
+          item.style.height = `${heightEl + 26}px`;
+          arrows.style.transform = "rotate(0deg)";
+        }
+      });
+    });
+
+    function handleClickOutside(event) {
+      if (!menuEstilos.contains(event.target)) {
+        menuPrincipal.classList.remove("visible");
+        menuEstilos.classList.remove("active");
+
+        document.removeEventListener("click", handleClickOutside);
+      }
+    }
   }
 });
 

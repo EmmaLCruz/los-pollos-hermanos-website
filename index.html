@@ -16,7 +16,7 @@
     <meta name="author" content="Los Pollos Hermanos" />
     <link
       rel="shortcut icon"
-      href="img/backgrounds/lph-logo.ico"
+      href="../img/backgrounds/lph-logo.ico"
       type="image/x-icon"
     />
 
@@ -58,20 +58,27 @@
             <a class="main-nav__logo-link" href="index.html">
               <img
                 class="main-nav__logo-img"
-                src="img/backgrounds/liston.png"
+                src="../img/backgrounds/liston.png"
                 alt="Liston amarillo con el logotipo de Los Pollos Hermanos"
               />
             </a>
           </div>
 
-          <div class="main-nav__menu">
+          <div class="main-nav__menu" id="menu-list">
             <ul class="main-nav__menu-list">
+              <figure class="main-nav__menu-img">
+                <img
+                  loading="lazy"
+                  src="./img/backgrounds/lph-footer-logo.png"
+                  alt="Logo de Los Pollos Hermanos"
+                />
+              </figure>
               <li class="main-nav__menu-list-item" id="show-home">
                 <a class="main-nav__menu-list-item-list" href="#">
                   Home
                   <span class="material-symbols-outlined"> stat_minus_1 </span>
                 </a>
-                <ul class="main-nav__sub-menu" id="sub-menu">
+                <ul class="main-nav__sub-menu">
                   <li class="main-nav__sub-menu-item">
                     <a class="main-nav__menu-list-item-list" href="#products"
                       >Products</a
@@ -221,6 +228,9 @@
                   >Contact</a
                 >
               </li>
+              <button class="btn--square main-nav__menu-btn">
+                Start Shopping Now
+              </button>
             </ul>
           </div>
 

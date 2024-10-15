@@ -148,6 +148,23 @@
     display: block;
   }
 
+  .main-nav__menu-img {
+    display: flex;
+  }
+
+  .main-nav__menu-btn{
+    display: block;
+  }
+
+  .main-nav__menu-list-item-list  .material-symbols-outlined{
+    transform: rotate(-90deg);
+    transition: transform var(--transition-duration) var(--transition-easing);
+  }
+
+  .main-nav__menu-list-item:hover  .main-nav__sub-menu {
+    display: none;
+  }
+
   /* -- Wave -- */
   .wave{
     background-image: none;
