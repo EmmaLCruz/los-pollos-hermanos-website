@@ -160,7 +160,6 @@ a{
 .main-nav__menu{
   font-weight: 700;
   height: var(--content-height);
-  transition: height 1s var(--transition-easing), opacity var(--transition-duration) var(--transition-easing);
 }
 
 .main-nav__menu-list {
@@ -226,7 +225,7 @@ a{
   display: none;
   background-color: #7b0000;
   border-bottom: 3px solid var(--color-secondary);
-  top: 32px;
+  top: 40px;
   width: 100%;
   left: 0;
   margin-left: 0;
@@ -1469,6 +1468,7 @@ a{
   display: none;
   text-transform: none;
   margin-top: -8px;
+  padding-block: 14px;
   font-weight: 600;
   letter-spacing: 0;
   font-size: var(--font-size-p);

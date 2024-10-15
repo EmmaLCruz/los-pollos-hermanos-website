@@ -43,7 +43,7 @@ function handleSubmenuClick(event) {
   } else {
     subMenu.style.display = "flex";
     let heightEl = subMenu.scrollHeight;
-    item.style.height = `${heightEl + 32}px`;
+    item.style.height = `${heightEl + 40}px`;
     arrows.style.transform = "rotate(0deg)";
   }
 }
