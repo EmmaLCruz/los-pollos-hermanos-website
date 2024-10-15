@@ -18,7 +18,7 @@ menuBar.addEventListener("click", (event) => {
     ) {
       menuPrincipal.classList.remove("visible");
       menuEstilos.classList.remove("active");
-      console.log("Click fuera del elemento");
+      // console.log("Click fuera del elemento");
 
       document.removeEventListener("click", handleClickOutside);
     }
