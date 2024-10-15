@@ -172,7 +172,7 @@ a{
 .main-nav__menu-img{
   display: none;
   justify-content: center;
-  margin: 60px auto 24px;
+  margin: 48px auto 24px;
   width: 112px;
 }
 
@@ -196,10 +196,10 @@ a{
   flex-direction: column;
   z-index: 10;
   height: fit-content;
-  width: 40vh;
+  width: 288px;
   left: 0;
   margin-left: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .active > li{

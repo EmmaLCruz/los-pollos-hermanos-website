@@ -3,23 +3,32 @@ const menuPrincipal = document.querySelector(".main-nav__menu");
 const menuEstilos = document.querySelector(".main-nav__menu-list");
 const subMenues = document.querySelectorAll(".main-nav__sub-menu");
 
-menuBar.addEventListener("click", () => {
+menuBar.addEventListener("click", (event) => {
+  event.stopPropagation();
+
   menuPrincipal.classList.toggle("visible");
   menuEstilos.classList.toggle("active");
 
-  setTimeout(() => {
-    document.addEventListener("click", handleClickOutside, { once: true }, 500);
-  });
+  document.addEventListener("click", handleClickOutside);
+
+  function handleClickOutside(event) {
+    if (
+      !menuEstilos.contains(event.target) &&
+      !menuBar.contains(event.target)
+    ) {
+      menuPrincipal.classList.remove("visible");
+      menuEstilos.classList.remove("active");
+      console.log("Click fuera del elemento");
+
+      document.removeEventListener("click", handleClickOutside);
+    }
+  }
 
   if (menuPrincipal.style.display == "flex") {
-    // menuPrincipal.style.display = "none";
-
     subMenues.forEach((subMenu) =>
       subMenu.classList.remove("sub-menu--active")
     );
   } else {
-    // menuPrincipal.classList.add("visible");
-    // menuEstilos.classList.add("active");
     subMenues.forEach((subMenu) => subMenu.classList.add("sub-menu--active"));
 
     let activeElements = document.querySelectorAll(
@@ -44,15 +53,6 @@ menuBar.addEventListener("click", () => {
         }
       });
     });
-
-    function handleClickOutside(event) {
-      if (!menuEstilos.contains(event.target)) {
-        menuPrincipal.classList.remove("visible");
-        menuEstilos.classList.remove("active");
-
-        document.removeEventListener("click", handleClickOutside);
-      }
-    }
   }
 });
 
