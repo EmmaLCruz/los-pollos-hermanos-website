@@ -2,7 +2,7 @@ const menuBar = document.getElementById("menu-bar");
 const menuPrincipal = document.querySelector(".main-nav__menu");
 const menuEstilos = document.querySelector(".main-nav__menu-list");
 const subMenues = document.querySelectorAll(".main-nav__sub-menu");
-const menuSecciones = document.querySelectorAll(".main-nav__sub-menu-item");
+const menuSecciones = document.querySelectorAll(".menu-handler");
 
 menuSecciones.forEach((seccion) => {
   seccion.addEventListener("click", closeMenu);
@@ -28,7 +28,6 @@ menuBar.addEventListener("click", (event) => {
     ) {
       menuPrincipal.classList.remove("visible");
       menuEstilos.classList.remove("active");
-      // console.log("Click fuera del elemento");
 
       document.removeEventListener("click", handleClickOutside);
     }
