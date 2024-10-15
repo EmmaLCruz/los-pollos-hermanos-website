@@ -48,7 +48,7 @@ menuBar.addEventListener("click", (event) => {
         } else {
           subMenuesHidden.style.display = "flex";
           heightEl = subMenuesHidden.scrollHeight;
-          item.style.height = `${heightEl + 26}px`;
+          item.style.height = `${heightEl + 32}px`;
           arrows.style.transform = "rotate(0deg)";
         }
       });

@@ -196,7 +196,7 @@ a{
   flex-direction: column;
   z-index: 10;
   height: fit-content;
-  width: 288px;
+  width: 296px;
   left: 0;
   margin-left: 0;
   overflow: hidden;
@@ -204,6 +204,7 @@ a{
 
 .active > li{
   border-bottom: 3px solid var(--color-secondary);
+  padding-block: 8px;
   align-items: start;
 }
 
@@ -222,7 +223,7 @@ a{
 .sub-menu--active {
   display: none;
   background-color: #000;
-  top: 24px;
+  top: 32px;
   width: 100%;
   left: 0;
   margin-left: 0;
