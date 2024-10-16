@@ -77,3 +77,7 @@ $(document).ready(function () {
 });
 
 setTimeout(galleryInit, 100);
+
+$(window).on("load", function () {
+  $(window).trigger("resize"); // Forzar un evento de resize después de que todo haya cargado
+});
