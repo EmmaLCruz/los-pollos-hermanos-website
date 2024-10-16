@@ -134,7 +134,7 @@ a{
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  border-bottom: 1.5px solid #7e0301;
+  border-bottom: 1px solid rgba(126, 3, 1, .5);
 }
 
 .main-nav__container{
@@ -191,7 +191,6 @@ a{
 
 .active {
   background-color: var(--color-primary);
-  /* position: absolute; */
   position: fixed;
   flex-direction: column;
   z-index: 10;
@@ -199,8 +198,7 @@ a{
   width: 296px;
   left: 0;
   margin-left: 0;
-  overflow: hidden;
-
+  overflow-y: auto;
 }
 
 .active > li{
@@ -247,7 +245,8 @@ a{
 }
 
 .main-nav__sub-menu-item {
-  list-style: none;
+  position: relative; /* Agregado 16/10 */
+
   padding: .5rem 2rem;
   border-top: var(--border-width) solid var(--color-secondary);
   transition: background-color var(--transition-duration) var(--transition-easing);
@@ -274,6 +273,7 @@ a{
 .main-nav__menu-list-item-link,
 .main-nav__menu-list-item-list{
   position: relative;
+  width: max-content;
   color: var(--color-text-light);
   text-decoration: none;
   display: flex;
@@ -383,7 +383,7 @@ a{
 .hero{
   width: var(--content-width);
   height: fit-content;
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../img/backgrounds/red-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/backgrounds/red-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

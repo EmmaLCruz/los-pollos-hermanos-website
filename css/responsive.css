@@ -169,6 +169,15 @@
     width: 100%;
   }
 
+  .main-nav__menu-list-item-list.post-types > span.material-symbols-outlined{
+    display: inline-block;
+    transform: rotate(0deg) !important;
+  }
+
+  .post-types-list > .main-nav__sub-menu-item{
+    border-left: 1px solid var(--color-secondary);
+  }
+
   /* -- Wave -- */
   .wave{
     background-image: none;

@@ -4,6 +4,29 @@ const menuEstilos = document.querySelector(".main-nav__menu-list");
 const subMenues = document.querySelectorAll(".main-nav__sub-menu");
 const menuSecciones = document.querySelectorAll(".menu-handler");
 
+const postTypes = document.getElementById("post-types");
+const postSubMenu = document.querySelectorAll(".main-nav__sub-menu-item");
+const postTypesList = document.querySelector(".post-types-list");
+const blogItem = document.querySelector(".blog-item");
+const postArrow = document.querySelector(
+  ".main-nav__menu-list-item-list.post-types > span.material-symbols-outlined"
+);
+
+postTypes.addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  if (postTypesList.style.display == "flex") {
+    postTypesList.style.display = "none";
+    postArrow.style.setProperty("transform", "rotate(0deg)", "important");
+  } else {
+    postTypesList.style.display = "flex";
+    postTypesList.style.marginTop = "-40px";
+    postTypesList.style.paddingLeft = "24px";
+    postArrow.style.setProperty("transform", "rotate(90deg)", "important");
+  }
+});
+
 menuSecciones.forEach((seccion) => {
   seccion.addEventListener("click", closeMenu);
 });
@@ -17,6 +40,7 @@ function closeMenu() {
 function handleSubmenuClick(event) {
   event.stopPropagation(); // Evita que el clic en los submenús dispare handleClickOutside
   const item = event.currentTarget;
+
   let subMenu = item.querySelector(".sub-menu--active");
   let arrows = item.querySelector(".material-symbols-outlined");
 
