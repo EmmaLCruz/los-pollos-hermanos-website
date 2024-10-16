@@ -1268,13 +1268,15 @@ a{
 /* Inicio: Sección Galería de Imágenes */
 
 .gallery__content{
-  content-visibility: auto;
   display: flex;
+  align-items: center;
+  height: auto;
   overflow: hidden;
   background-color: #000;
 }
 
 .gallery__item{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1305,6 +1307,7 @@ a{
 
 .gallery__image{
   width: 100%;
+  height: auto;
 }
 
 .gallery__image--img {
