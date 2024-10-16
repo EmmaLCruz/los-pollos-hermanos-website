@@ -18,7 +18,7 @@ function galleryInit() {
     share: true,
     mode: "lg-fade",
     thumbnail: true,
-    selector: ".gallery__anchor", // Asegúrate de que el selector sea correcto
+    selector: ".gallery__anchor:not(.slick-cloned)", // Asegúrate de que el selector sea correcto
   });
 }
 
@@ -75,8 +75,6 @@ $(document).ready(function () {
     ],
   });
 });
-
-setTimeout(galleryInit, 100);
 
 $(window).on("load", function () {
   $(window).trigger("resize"); // Forzar un evento de resize después de que todo haya cargado
