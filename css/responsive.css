@@ -174,6 +174,10 @@
     transform: rotate(0deg) !important;
   }
 
+  .main-nav__sub-menu-item {
+    position: relative;
+  }
+
   .post-types-list > .main-nav__sub-menu-item{
     border-left: 1px solid var(--color-secondary);
   }

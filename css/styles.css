@@ -245,8 +245,6 @@ a{
 }
 
 .main-nav__sub-menu-item {
-  position: relative; /* Agregado 16/10 */
-
   padding: .5rem 2rem;
   border-top: var(--border-width) solid var(--color-secondary);
   transition: background-color var(--transition-duration) var(--transition-easing);

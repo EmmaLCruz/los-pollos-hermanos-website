@@ -128,6 +128,7 @@ menuBar.addEventListener("click", (event) => {
   }
 });
 
+// Función para controlar animación de elementos del DOM
 document.addEventListener("DOMContentLoaded", () => {
   const fatherElements = document.querySelectorAll(".animation-item");
 
