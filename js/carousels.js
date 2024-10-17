@@ -16,12 +16,12 @@ $(document).ready(function () {
 
   // Forzar visibilidad después de la carga completa
   $(window).on("load", function () {
-    $(".gallery__content").css("visibility", "hidden"); // Ocultar temporalmente
+    // Asegurar que slick se reinicializa después de cargar
     setTimeout(function () {
-      $(".gallery__content").slick("setPosition"); // Forzar recalculo de slick
-      $(".gallery__content").css("visibility", "visible"); // Mostrar galería de nuevo
+      $(".gallery__content").slick("refresh"); // Forzar refresh de slick
+      $(".gallery__content").css("visibility", "visible"); // Asegurarse de que la galería sea visible
       initGallery(); // Inicializar lightGallery
-    }, 300); // Dar tiempo a que el DOM se ajuste
+    }, 300); // Puede ajustar el tiempo aquí si es necesario
   });
 });
 

@@ -2,6 +2,10 @@
 
 /* Inicio: Estilos generales */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Colores primarios */
   --color-primary: #a50301;
