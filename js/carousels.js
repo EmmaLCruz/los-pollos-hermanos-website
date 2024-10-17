@@ -23,6 +23,19 @@ $(document).ready(function () {
       initGallery(); // Inicializar lightGallery
     }, 300); // Puede ajustar el tiempo aquí si es necesario
   });
+
+  // Pausar el autoplay después de cada cambio
+  $(".gallery__content").on(
+    "afterChange",
+    function (event, slick, currentSlide) {
+      $(".gallery__content").slick("slickPause"); // Pausar el autoplay
+
+      // Esperar 3 segundos adicionales antes de reanudar el autoplay
+      setTimeout(function () {
+        $(".gallery__content").slick("slickPlay");
+      }, 5000); // Ajusta este valor para aumentar el tiempo adicional que la imagen permanece quieta
+    }
+  );
 });
 
 function initializeGalleryCarousel() {
