@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // Inicialización del carrusel de testimonios
   $(".testimonials__carousel").slick({
     infinite: true,
     slidesToShow: 1,
@@ -20,20 +19,20 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".gallery__content").slick("refresh"); // Forzar refresh de slick
       $(".gallery__content").css("visibility", "visible"); // Asegurarse de que la galería sea visible
-      initGallery(); // Inicializar lightGallery
-    }, 300); // Puede ajustar el tiempo aquí si es necesario
+      initGallery();
+    }, 300);
   });
 
   // Pausar el autoplay después de cada cambio
   $(".gallery__content").on(
     "afterChange",
     function (event, slick, currentSlide) {
-      $(".gallery__content").slick("slickPause"); // Pausar el autoplay
+      $(".gallery__content").slick("slickPause");
 
       // Esperar 3 segundos adicionales antes de reanudar el autoplay
       setTimeout(function () {
         $(".gallery__content").slick("slickPlay");
-      }, 5000); // Ajusta este valor para aumentar el tiempo adicional que la imagen permanece quieta
+      }, 5000);
     }
   );
 });

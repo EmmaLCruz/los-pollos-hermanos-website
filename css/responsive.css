@@ -11,7 +11,7 @@
 
   /* -- Newsletter -- */
   .form__title{
-    font-size: 32px;
+    font-size: var(--font-size-h2);
   }
 }
 
@@ -166,7 +166,7 @@
   }
 
   .main-nav__menu-list-item-link{
-    width: 100%;
+    width: var(--content-width);
   }
 
   .main-nav__menu-list-item-list.post-types > span.material-symbols-outlined{
@@ -304,7 +304,7 @@
   }
 
   .widget {
-    width: 100%;
+    width: var(--content-width);
     padding: 46px;
   }
 
@@ -376,11 +376,11 @@
   .form__body {
     flex-direction: column;
     gap: var(--spacing-md);
-    width: 100%;
+    width: var(--content-width);
   }
 
   .form__input{
-    width: 100%;
+    width: var(--content-width);
   }
 }
 
@@ -509,7 +509,7 @@
   }
 
   .widget__copy{
-    margin-left: 16px;
+    margin-left: var(--spacing-md);
   }
 
   /* -- Combos -- */
@@ -532,7 +532,7 @@
   }
 
   .carousel__details{
-    width: 100%;
+    width: var(--content-width);
   }
 
   .slick-dots{
@@ -545,7 +545,7 @@
   }
 
   .delivery__subtitle{
-    font-size: 32px;
+    font-size: var(--font-size-h2);
   }
 
   /* -- Newsletter -- */
@@ -570,8 +570,8 @@
   }
 
   .widget__subtitle {
-    font-size: 32px;
-    margin-bottom: 16px;
+    font-size: var(--font-size-h2);
+    margin-bottom: var(--spacing-md);
   }
 
   .widget__details-price {
