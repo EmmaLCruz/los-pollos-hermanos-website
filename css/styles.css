@@ -277,7 +277,6 @@ a{
   position: relative;
   width: max-content;
   color: var(--color-text-light);
-  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -330,7 +329,6 @@ a{
 .main-nav__order-box-link{
   font-size: var(--font-size-h3);
   color: var(--color-text-light);
-  text-decoration: none;
   font-weight: 700;
 }
 
@@ -1016,10 +1014,6 @@ a{
   gap: var(--spacing-sm);
 }
 
-.slick-dots li{
-  list-style: none;
-}
-
 .slick-active button{
   transform: scale(1.1);
   background-color: var(--color-primary);
@@ -1057,7 +1051,7 @@ a{
 }
 
 .delivery__img--moto img{
-  width: 100%;
+  width: var(--content-width);
   max-width: 500px;
   opacity: 0.9;
 }
@@ -1247,7 +1241,7 @@ a{
 
 .form__input::placeholder{
   color: var(--color-text-secondary);
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 .btn--square{
@@ -1280,7 +1274,7 @@ a{
 }
 
 .gallery__item{
-  height: 100%;
+  height: var(--content-height);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1303,19 +1297,19 @@ a{
 
 .gallery__zoom-out{
   font-weight: 300;
-  font-size: 32px;
+  font-size: var(--font-size-h2);
   background-color: var(--color-secondary);
   padding: var(--spacing-sm);
   color: var(--color-text-light);
 }
 
 .gallery__image{
-  width: 100%;
+  width: var(--content-width);
   height: auto;
 }
 
 .gallery__image--img {
-  width: 100%;
+  width: var(--content-width);
   transition: transform 1s ease-in-out;
 }
 
@@ -1340,7 +1334,7 @@ a{
 }
 
 .footer__background-image{
-  height: 100%;
+  height: var(--content-height);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1348,7 +1342,7 @@ a{
 }
 
 .footer__background-image img{
-  height: 100%;
+  height: var(--content-height);
   opacity: .2;
 }
 
@@ -1363,7 +1357,7 @@ a{
 }
 
 .footer__content{
-  width: 100%;
+  width: var(--content-width);
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-lg) 0;
@@ -1401,6 +1395,7 @@ a{
 .footer__image img{
   width: 100px;
 }
+
 .footer__location{
   margin-top: 12px;
 }
@@ -1417,18 +1412,16 @@ a{
 
 .footer__days span{
   text-align: left;
-  margin-left: 16px;
+  margin-left: var(--spacing-md);
 }
 
 .footer__item a{
   color: var(--color-text-light);
-  text-decoration: none;
 }
 
 .footer__item li,
 .footer__item li a{
-  list-style: none;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: #a8a8a8;
   line-height: 2;
   font-family: var(--font-family-roboto);
