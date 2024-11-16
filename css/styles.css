@@ -100,6 +100,26 @@ a{
   padding: 0 7vw;
 }
 
+.body__hidden{
+  overflow: hidden;
+}
+
+.page__logo{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #fddb00;
+  z-index: 20;
+}
+
+.page__logo-img{
+  width: 8rem;
+}
+
 /* Fin: Estilos generales */
 
 /* Inicio: Botón Arriba */

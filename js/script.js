@@ -1,3 +1,8 @@
+window.onload = function () {
+  $("#onload").fadeOut();
+  $("body").removeClass("body__hidden");
+};
+
 const menuBar = document.getElementById("menu-bar");
 const menuPrincipal = document.querySelector(".main-nav__menu");
 const menuEstilos = document.querySelector(".main-nav__menu-list");
