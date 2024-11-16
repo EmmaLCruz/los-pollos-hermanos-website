@@ -1,6 +1,8 @@
 window.onload = function () {
-  $("#onload").fadeOut();
-  $("body").removeClass("body__hidden");
+  setTimeout(function () {
+    $("#onload").fadeOut();
+    $("body").removeClass("body__hidden");
+  }, 500);
 };
 
 const menuBar = document.getElementById("menu-bar");
