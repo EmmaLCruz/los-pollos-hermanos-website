@@ -209,8 +209,7 @@ a{
   align-items: center;
   height: var(--content-height);
   padding-inline: .3rem;
-
-  position: relative; /* agregada para arreglar top de su hijo */
+  position: relative;
 }
 
 .active {
