@@ -426,7 +426,7 @@ a{
   flex-direction: column;
   justify-content: space-around;
   gap: var(--spacing-md);
-  animation: move-from-left 1.5s var(--animation-easing);
+  animation: move-from-left 1.5s var(--animation-easing) .5s;
 }
 
 .hero__title {
@@ -470,7 +470,7 @@ a{
 
 .hero__content-img{
   margin: auto 0;
-  animation: move-from-right 1.5s var(--transition-easing);
+  animation: move-from-right 1.5s var(--transition-easing) .5s;
 }
 
 .hero__img{
