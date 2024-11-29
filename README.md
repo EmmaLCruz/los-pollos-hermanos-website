@@ -11,6 +11,10 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 ## Capturas de pantalla
 ![Vista principal](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg)
 ![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg)
+![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/vegan-banner.jpg)
+![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/testimonials-banner.jpg)
+![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/delivery-banner.jpg)
+![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg)
 
 ## Tecnologías utilizadas
 - HTML5
