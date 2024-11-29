@@ -1,3 +1,4 @@
+![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/pollos-hermanos-banner.jpg)
 # Los Pollos Hermanos Website
 
 Una página web responsive desarrollada como práctica para aplicar conocimientos de HTML, CSS y JavaScript. Este proyecto incluye un diseño moderno y varias interacciones dinámicas.
