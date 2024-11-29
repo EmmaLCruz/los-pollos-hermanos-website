@@ -9,7 +9,8 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 [Visita la página aquí](https://emmalcruz.github.io/los-pollos-hermanos-website/)
 
 ## Capturas de pantalla
-![Vista principal](ruta/a/imagen.png)
+![Vista principal](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg)
+![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg)
 
 ## Tecnologías utilizadas
 - HTML5
@@ -17,10 +18,12 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 - JavaScript
 - JQuery
 
-## Características principales
-- Diseño completamente responsive.
-- Barra de navegación funcional.
-- Animaciones con CSS, JQuery y JavaScript.
+## Funcionalidades
+- Navbar funcional: Incluye navegación hacia las secciones principales de la página.
+- Diseño responsive: Adaptado para diferentes dispositivos.
+- Animaciones replicadas: Detalles visuales y animaciones cuidadas al máximo.
+
+Este proyecto fue un desafío emocionante y considero que fue un éxito. Si bien hice algunos ajustes mínimos para mejorar ciertos elementos (como las cards), mi enfoque principal fue mantener la fidelidad al diseño original. Por el momento, solo trabajé en la página principal.
 
 ## Estado
 - Completado, no planeo añadir más secciones ni funcionalidades.
