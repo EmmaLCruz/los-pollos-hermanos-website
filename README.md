@@ -17,8 +17,8 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 ![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg)
 
 ## Tecnologías utilizadas
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - JQuery
 
