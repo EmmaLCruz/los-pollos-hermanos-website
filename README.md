@@ -9,12 +9,15 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 [Visita la página aquí](https://emmalcruz.github.io/los-pollos-hermanos-website/)
 
 ## Capturas de pantalla
-![Vista principal](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg)
-![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg)
-![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/vegan-banner.jpg)
-![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/testimonials-banner.jpg)
-![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/delivery-banner.jpg)
-![](https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg)
+<p align="center">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg" alt="Vista principal" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg" alt="Productos" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/vegan-banner.jpg" alt="Vegano" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/testimonials-banner.jpg" alt="Testimonios" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/delivery-banner.jpg" alt="Delivery" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg" alt="Newsletter" width="400px">
+</p>
+
 
 ## Tecnologías utilizadas
 - HTML
