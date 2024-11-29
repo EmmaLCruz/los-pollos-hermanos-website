@@ -33,4 +33,4 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 Este proyecto fue un desafío emocionante y considero que fue un éxito. Si bien hice algunos ajustes mínimos para mejorar ciertos elementos (como las cards), mi enfoque principal fue mantener la fidelidad al diseño original. Por el momento, solo trabajé en la página principal.
 
 ## Estado
-- Completado, no planeo añadir más secciones ni funcionalidades.
+- Completado.
