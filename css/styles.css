@@ -391,7 +391,7 @@ a{
   overflow: hidden;
   position: absolute;
   width: var(--content-width);
-  background-image: url("../img/backgrounds/wave.png");
+  background-image: url("../img/backgrounds/wave.avif");
   height: 30px;
   background-repeat: repeat-x;
   animation: wave-movement 20s linear infinite;
@@ -415,7 +415,7 @@ a{
 .hero{
   width: var(--content-width);
   height: fit-content;
-  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/backgrounds/red-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/backgrounds/red-background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -496,7 +496,7 @@ a{
 .products{
   content-visibility: auto;
   height: fit-content;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("../img/backgrounds/yellow.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("../img/backgrounds/yellow.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -684,7 +684,7 @@ a{
   content-visibility: auto;
   width: var(--content-width);
   height: fit-content;
-  background-image: url("../img/backgrounds/hand-drawn-chalkboard.jpg");
+  background-image: url("../img/backgrounds/hand-drawn-chalkboard.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
