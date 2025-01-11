@@ -10,12 +10,12 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 
 ## Capturas de pantalla
 <p align="center">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg" alt="Vista principal" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg" alt="Productos" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/vegan-banner.jpg" alt="Vegano" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/testimonials-banner.jpg" alt="Testimonios" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/delivery-banner.jpg" alt="Delivery" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg" alt="Newsletter" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg" alt="Vista principal" width="300px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg" alt="Productos" width="300px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/vegan-banner.jpg" alt="Vegano" width="300px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/testimonials-banner.jpg" alt="Testimonios" width="300px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/delivery-banner.jpg" alt="Delivery" width="300px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg" alt="Newsletter" width="300px">
 </p>
 
 
@@ -33,4 +33,4 @@ Decidí inspirarme en el concepto de restaurantes como McDonald's o KFC, pero al
 Este proyecto fue un desafío emocionante y considero que fue un éxito. Si bien hice algunos ajustes mínimos para mejorar ciertos elementos (como las cards), mi enfoque principal fue mantener la fidelidad al diseño original. Por el momento, solo trabajé en la página principal.
 
 ## Estado
-- Completado, no planeo añadir más secciones ni funcionalidades.
+- Completado.
