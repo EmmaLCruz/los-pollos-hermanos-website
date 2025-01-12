@@ -484,6 +484,10 @@
     min-width: 72%;
   }
 
+  .card__image{
+    height: var(--content-height);
+  }
+
   /* -- Botones -- */
   .btn{
     height: 48px;
