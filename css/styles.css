@@ -118,6 +118,8 @@ a{
 
 .page__logo-img{
   width: 8rem;
+  height: auto;
+  object-fit: cover;
   transition: opacity 0.3s ease, transform 0.3s ease;
   animation: fadeInOut 1.3s linear infinite alternate;
 }
