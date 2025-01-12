@@ -217,7 +217,9 @@ a{
 }
 
 .main-nav__menu-img img{
-  width: 100%;
+  width: var(--content-width);
+  height: auto;
+  object-fit: cover;
 }
 
 .main-nav__menu-list-item {
