@@ -342,7 +342,7 @@
     width: 80vw;
   }
 
-  .delivery__img--hand-cellphone img{
+  .delivery__img--hand-cellphone{
     width: 180px;
   }
 
@@ -555,8 +555,6 @@
   .form__title{
     font-size: 28px;
   }
-
-  
 }
 
 @media (max-width: 480px) {

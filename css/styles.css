@@ -1181,11 +1181,13 @@ a{
   position: absolute;
   right: 0;
   bottom: -6px;
+  width: 280px;
 }
 
 .delivery__img--hand-cellphone img {
+  width: var(--content-width);
+  height: auto;
   opacity: .9;
-  width: 280px;
   object-fit: cover;
 }
 
@@ -1286,7 +1288,7 @@ a{
 }
 
 .newsletter__img--background img {
-  width: 100%;
+  width: var(--content-width);
   height: auto;
   object-fit: cover;
 }
