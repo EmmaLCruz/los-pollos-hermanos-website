@@ -486,7 +486,9 @@ a{
 }
 
 .hero__img{
-  width: 360px;
+  width: 340px;
+  height: 380px;
+  object-fit: cover;
 }
 
 /* Fin: Intro */
@@ -796,7 +798,9 @@ a{
 }
 
 .widget__image img{
-  width: 300px;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
 }
 
 .btn--red{
@@ -1037,6 +1041,8 @@ a{
 
 .carousel__image img{
   width: 140px;
+  height: 140px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -1085,8 +1091,9 @@ a{
 
 .delivery__img--moto img{
   width: var(--content-width);
-  max-width: 500px;
+  max-width: 600px;
   opacity: 0.9;
+  object-fit: cover;
 }
 
 .delivery__details{
@@ -1155,7 +1162,8 @@ a{
 
 .delivery__img--hand-cellphone img {
   opacity: .9;
-  width: 360px;
+  width: 280px;
+  object-fit: cover;
 }
 
 /* Fin: Sección Delivery */
@@ -1204,6 +1212,8 @@ a{
 
 .drawn-card__image img{
   width: 70px;
+  height: 70px;
+  object-fit: cover;
 }
 
 .drawn-card__title{
