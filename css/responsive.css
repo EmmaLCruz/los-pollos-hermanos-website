@@ -261,8 +261,9 @@
     transform: translateX(-50%);
   }
 
-  .footer__background-image img{
-    opacity: .1;
+  /* -- Footer -- */
+  .footer__background-image {
+    display: none;
   }
 }
 
@@ -374,6 +375,7 @@
   .form__input{
     width: var(--content-width);
   }
+    
 }
 
 @media (max-width: 682px) {
@@ -435,6 +437,7 @@
   .combos__title--red{
     display: block;
   }
+    
 }
 
 @media (max-width: 576px) {
@@ -553,10 +556,7 @@
     font-size: 28px;
   }
 
-  /* -- Footer -- */
-  .footer__background-image{
-    display: none;
-  }
+  
 }
 
 @media (max-width: 480px) {

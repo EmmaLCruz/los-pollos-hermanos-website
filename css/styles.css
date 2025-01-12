@@ -1237,7 +1237,6 @@ a{
 .drawn-card__image img{
   width: 70px;
   height: 70px;
-  /* object-fit: contain; */
   object-fit: cover;
 }
 
@@ -1405,6 +1404,7 @@ a{
 }
 
 .footer__background-image{
+  width: var(--content-width);
   height: var(--content-height);
   position: absolute;
   right: 0;
