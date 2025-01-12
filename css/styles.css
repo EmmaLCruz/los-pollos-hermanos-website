@@ -582,7 +582,6 @@ a{
 }
 
 .card__image img {
-  /* width: 170px; */
   width: 100%;
   height: auto;
   padding: var(--spacing-md);
@@ -803,12 +802,14 @@ a{
   align-items: center;
   position: absolute;
   right: var(--spacing-md);
-  bottom: 0;
+  bottom: -28px;
+  width: 280px;
+  height: 280px;
 }
 
 .widget__image img{
-  width: 280px;
-  height: 280px;
+  width: var(--content-width);
+  height: auto;
   object-fit: cover;
 }
 
@@ -1043,17 +1044,22 @@ a{
 }
 
 .carousel__image{
+  margin: 0 auto;
   margin-top: var(--spacing-md);
   display: flex;
   justify-content: center;
   object-fit: cover;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+
 }
 
 .carousel__image img{
-  width: 140px;
-  height: 140px;
+  width: var(--content-width);
+  height: auto;
   object-fit: cover;
-  border-radius: 50%;
 }
 
 .slick-dots{
