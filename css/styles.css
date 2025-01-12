@@ -1395,7 +1395,8 @@ a{
 }
 
 .footer__background-image img{
-  height: var(--content-height);
+  width: var(--content-width);
+  object-fit: cover;
   opacity: .2;
 }
 
@@ -1445,8 +1446,15 @@ a{
   text-align: center;
 }
 
-.footer__image img{
+.footer__image{
   width: 100px;
+  margin: 0 auto;
+}
+
+.footer__image img{
+  width: var(--content-width);
+  height: auto;
+  object-fit: cover;
 }
 
 .footer__location{
