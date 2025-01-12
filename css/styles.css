@@ -148,12 +148,13 @@ a{
 }
 
 .up-btn-key {
+  font-size: var(--font-size-h1);
   color: var(--color-text-light);
   background-color: var(--color-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
-  padding: var(--spacing-sm);
+  padding: .85rem;
   transition: background-color var(--transition-duration) var(--transition-easing);
 }
 
@@ -606,9 +607,13 @@ a{
 }
 
 .card__image img {
-  width: 170px;
+  /* width: 170px; */
+  width: 100%;
+  height: auto;
+  padding: var(--spacing-sm);
   min-height: 140px;
   margin: var(--spacing-sm) auto;
+  object-fit: cover;
 }
 
 .card__rating{
