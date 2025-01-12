@@ -1097,19 +1097,26 @@ a{
   padding-block: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .delivery__img--moto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--content-width);
+  height: auto;
+  margin: 0 auto;
+  max-width: 600px;
   opacity: 0;
 }
 
 .delivery__img--moto img{
   width: var(--content-width);
-  max-width: 600px;
-  opacity: 0.9;
+  height: var(--content-height);
   object-fit: cover;
+  opacity: 0.9;
 }
 
 .delivery__details{
@@ -1201,9 +1208,9 @@ a{
 }
 
 .newsletter__cards{
-  display: flex;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: var(--spacing-md);
 }
 
 .newsletter__cards--content{
@@ -1214,6 +1221,7 @@ a{
 .drawn-card{
   display: flex;
   flex-direction: column;
+  width: var(--content-width);
   min-width: 230px;
   gap: var(--spacing-md);
   padding: 40px var(--spacing-md);

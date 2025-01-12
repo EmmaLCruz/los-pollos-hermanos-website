@@ -337,10 +337,6 @@
     grid-template-rows: auto 1fr;
   }
 
-  .delivery__img--moto{
-    margin: 0 auto;
-  }
-
   .delivery__img--moto img{
     width: 80vw;
   }
