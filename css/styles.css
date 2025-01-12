@@ -610,7 +610,7 @@ a{
   /* width: 170px; */
   width: 100%;
   height: auto;
-  padding: var(--spacing-sm);
+  padding: var(--spacing-md);
   min-height: 140px;
   margin: var(--spacing-sm) auto;
   object-fit: cover;
@@ -896,6 +896,7 @@ a{
 .flier__image img{
   opacity: .5;
   width: var(--content-width);
+  height: var(--content-height);
   object-fit: cover;
 }
 
@@ -958,13 +959,13 @@ a{
 
 .testimonials{
   content-visibility: auto;
-  background-image: url("../img/testimonials/testimonial-background.jpg");
+  background-image: url("../img/testimonials/testimonial-background.webp");
   display: flex;
 }
 
 .testimonials__item {
   flex: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/testimonials/testimonial-img.png");
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/testimonials/testimonial-img.avif");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
@@ -1218,6 +1219,7 @@ a{
 .drawn-card__image img{
   width: 70px;
   height: 70px;
+  /* object-fit: contain; */
   object-fit: cover;
 }
 
@@ -1262,11 +1264,14 @@ a{
   position: absolute;
   bottom: -8px;
   left: -150px;
+  width: 560px;
   z-index: -1;
 }
 
 .newsletter__img--background img {
-  width: 560px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .form__body{
