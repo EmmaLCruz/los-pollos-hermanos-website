@@ -180,3 +180,102 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(box);
   });
 });
+
+// Renderizando las tarjetas dinamicamente
+
+const products = [
+  {
+    id: 1,
+    name: "Big Crunch Sandwich",
+    description:
+      "Indulge in our crispy chicken burger, topped with cheese, fresh lettuce, tomato, onions and our special sauce. An irresistible explosion of flavor!",
+    src: "img/cards/sandwich-crujiente-grande.avif",
+    alt: "Sandwich de pollo con cebolla, lechuga y tomates",
+    sale: 15,
+    priceNow: 6.29,
+    priceBefore: 7.39,
+    rating: 4.5,
+  },
+  {
+    id: 2,
+    name: "Big Crunch Sandwich",
+    description:
+      "Indulge in our crispy chicken burger, topped with cheese, fresh lettuce, tomato, onions and our special sauce. An irresistible explosion of flavor!",
+    src: "img/cards/sandwich-crujiente-grande.avif",
+    alt: "Sandwich de pollo con cebolla, lechuga y tomates",
+    sale: 15,
+    priceNow: 6.29,
+    priceBefore: 7.39,
+    rating: 4.5,
+  },
+  {
+    id: 3,
+    name: "Big Crunch Sandwich",
+    description:
+      "Indulge in our crispy chicken burger, topped with cheese, fresh lettuce, tomato, onions and our special sauce. An irresistible explosion of flavor!",
+    src: "img/cards/sandwich-crujiente-grande.avif",
+    alt: "Sandwich de pollo con cebolla, lechuga y tomates",
+    sale: 15,
+    priceNow: 6.29,
+    priceBefore: 7.39,
+    rating: 4.5,
+  },
+  {
+    id: 4,
+    name: "Big Crunch Sandwich",
+    description:
+      "Indulge in our crispy chicken burger, topped with cheese, fresh lettuce, tomato, onions and our special sauce. An irresistible explosion of flavor!",
+    src: "img/cards/sandwich-crujiente-grande.avif",
+    alt: "Sandwich de pollo con cebolla, lechuga y tomates",
+    sale: 15,
+    priceNow: 6.29,
+    priceBefore: 7.39,
+    rating: 4.5,
+  },
+];
+
+// `<article class="card">
+//   <span class="card__sale">-15%</span>
+//   <div class="card__image">
+//     <img
+//       loading="lazy"
+//       src="img/cards/sandwich-crujiente-grande.avif"
+//       alt="Sandwich de pollo con cebolla, lechuga y tomates"
+//       width="500"
+//       height="409"
+//     />
+//     <div class="card__links">
+//       <span class="material-symbols-outlined" title="More info">
+//         visibility
+//       </span>
+//       <span class="material-symbols-outlined" title="Like">
+//         favorite
+//       </span>
+//       <span class="material-symbols-outlined" title="Share">
+//         share
+//       </span>
+//     </div>
+//   </div>
+//   <div class="card__rating">
+//     <span class="material-symbols-outlined fill"> star </span>
+//     <span class="material-symbols-outlined fill"> star </span>
+//     <span class="material-symbols-outlined fill"> star </span>
+//     <span class="material-symbols-outlined fill"> star </span>
+//     <span class="material-symbols-outlined"> star_half </span>
+//   </div>
+//   <div class="card__body">
+//     <h2 class="card__title">Big Crunch Sandwich</h2>
+//     <div class="card__prices">
+//       <span class="card__prices-now">$6.29</span>
+//       <span class="card__prices-before">$7.39</span>
+//     </div>
+//     <p class="card__copy">
+//       Indulge in our crispy chicken burger, topped with cheese, fresh lettuce,
+//       tomato, onions and our special sauce. An irresistible explosion of flavor!
+//     </p>
+//   </div>
+//   <button class="btn btn__add-to-cart">
+//     <span class="material-symbols-outlined"> shopping_cart </span>
+//     Add to Cart
+//   </button>
+// </article>`
