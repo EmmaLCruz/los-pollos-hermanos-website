@@ -194,7 +194,7 @@
 
   /* -- Productos -- */
   .products__cards{
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   /* -- Vegetariana -- */
@@ -475,8 +475,8 @@
   }
 
   /* -- Productos -- */
-  .card{
-    min-width: 72%;
+  .products__cards{
+    padding: 0 4vw;
   }
 
   .card__image{
