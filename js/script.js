@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Renderizando las tarjetas dinamicamente
+// Renderizado de tarjetas de productos
 
 const products = [
   {
@@ -306,3 +306,77 @@ function createProduct({
 }
 
 products.forEach((product) => createProduct(product));
+
+// Renderizado de combo fliers
+
+const fliers = [
+  {
+    id: 1,
+    name: "Special Angus Burger",
+    src: "img/fliers/clasic-burger-combo.webp",
+    alt: "Hamburguesa sobre una tabla acompañada de salsa y papas fritas.",
+    description:
+      "The real Juicy Burger, tender Angus beef patty with fresh lettuce, tomato, and special sauce. A premium burger experience every bite.",
+    price: 6.99,
+  },
+  {
+    id: 2,
+    name: "Grand Spicy Burger",
+    src: "img/fliers/burger-split.webp",
+    alt: "Una hamburguesa dividida al medio, acompañada de queso cheddar derretido y papas fritas.",
+    description:
+      "Introducing our Grand Spicy: a juicy beef patty, melted cheese, fresh veggies, and a fiery sauce, served with crispy fries for an unforgettable meal.",
+    price: 7.99,
+  },
+  {
+    id: 3,
+    name: "Mega Cheese Burger",
+    src: "img/fliers/burger-soda-french-fries.webp",
+    alt: "Hamburguesa doble carne sobre una tabla, con papas fritas y un vaso grande de refresco de cola.",
+    description:
+      "Savor the Mega Cheese double beef patties, layers of melted cheese, tangy BBQ sauce, sesame bun, served with crispy fries and a refreshing drink.",
+    price: 8.99,
+  },
+  {
+    id: 4,
+    name: "Veg Cheese Burger",
+    src: "img/fliers/black-burger-and-regular-burger.webp",
+    alt: "Dos hamburguesas con lechuga y tomates, acompañadas de una salsa, tomates cherry y papas fritas, servidas sobre una tabla.",
+    description:
+      "Enjoy our delicious vegetarian burger, a plant-based patty, fresh lettuce, tomatoes, onions, and creamy cheese, all in a soft, sesame-topped bun.",
+    price: 5.99,
+  },
+];
+
+const combosCardsContainer = document.querySelector(".combos__cards");
+
+function createFlierCombos ({id, name, src, alt, description, price}) {
+  const divCombo = document.createElement("article")
+  divCombo.classList.add("flier", "animation-item");
+  divCombo.id = id;
+  divCombo.innerHTML = `
+  <div class="flier__details" data-animation="show">
+                <h2 class="flier__title">${name}</h2>
+                <p class="flier__paragraph">
+                  ${description}
+                </p>
+                <span class="flier__price">$${price}</span>
+                <button class="btn btn--yellow">ORDER NOW</button>
+              </div>
+              <picture class="flier__image">
+                <img
+                  loading="lazy"
+                  src="${src}"
+                  alt="${alt}"
+                  width="400"
+                  height="400"
+                />
+              </picture>
+              <div class="flier__side-board">
+                <h3 class="flier__subtitle">NEW</h3>
+              </div>
+  `;
+  combosCardsContainer.appendChild(divCombo)
+}
+
+fliers.forEach((flier) => createFlierCombos(flier))
