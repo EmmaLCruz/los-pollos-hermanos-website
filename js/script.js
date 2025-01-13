@@ -193,89 +193,116 @@ const products = [
     alt: "Sandwich de pollo con cebolla, lechuga y tomates",
     sale: 15,
     priceNow: 6.29,
-    priceBefore: 7.39,
     rating: 4.5,
   },
   {
     id: 2,
-    name: "Big Crunch Sandwich",
+    name: "Deli Daze",
     description:
-      "Indulge in our crispy chicken burger, topped with cheese, fresh lettuce, tomato, onions and our special sauce. An irresistible explosion of flavor!",
-    src: "img/cards/sandwich-crujiente-grande.avif",
-    alt: "Sandwich de pollo con cebolla, lechuga y tomates",
-    sale: 15,
-    priceNow: 6.29,
-    priceBefore: 7.39,
-    rating: 4.5,
+      "A juicy, seasoned chicken patty, nestled in a soft bun, topped with fresh lettuce and ripe tomatoes",
+    src: "img/cards/sandwich-queso-cheddar-lechuga-tomate.avif",
+    alt: "Sandwich de pollo, incluye queso cheddar, cebolla morada, lechuga y tomates",
+    priceNow: 5.99,
+    rating: 3.5,
   },
   {
     id: 3,
-    name: "Big Crunch Sandwich",
+    name: "Bite Brigade",
     description:
-      "Indulge in our crispy chicken burger, topped with cheese, fresh lettuce, tomato, onions and our special sauce. An irresistible explosion of flavor!",
-    src: "img/cards/sandwich-crujiente-grande.avif",
-    alt: "Sandwich de pollo con cebolla, lechuga y tomates",
-    sale: 15,
-    priceNow: 6.29,
-    priceBefore: 7.39,
-    rating: 4.5,
+      "Savor the ultimate double delight with juicy grilled chicken, crispy bacon, fresh veggies, cheese and our signature sauce.",
+    src: "img/cards/sandwich-doble-tocino-a-la-parrilla.avif",
+    alt: "Sandwich doble de pollo a la parrilla con tocino, verduras frescas, queso y salsa exclusiva",
+    sale: 23,
+    priceNow: 6.75,
+    rating: 5,
   },
   {
     id: 4,
-    name: "Big Crunch Sandwich",
+    name: "Crispy Deluxe",
     description:
-      "Indulge in our crispy chicken burger, topped with cheese, fresh lettuce, tomato, onions and our special sauce. An irresistible explosion of flavor!",
-    src: "img/cards/sandwich-crujiente-grande.avif",
-    alt: "Sandwich de pollo con cebolla, lechuga y tomates",
-    sale: 15,
-    priceNow: 6.29,
-    priceBefore: 7.39,
-    rating: 4.5,
+      "Experience crispy fried chicken, melted cheese, fresh lettuce, tomato, and creamy sauce in every delicious bite!",
+    src: "img/cards/sandwich-pollo-frito-con-queso-derretido-salsa-cremosa.avif",
+    alt: "Sandwich de pollo frito crujiente, queso derretido, lechuga fresca, tomate y salsa cremosa",
+    priceNow: 5.99,
+    rating: 4,
   },
 ];
 
-// `<article class="card">
-//   <span class="card__sale">-15%</span>
-//   <div class="card__image">
-//     <img
-//       loading="lazy"
-//       src="img/cards/sandwich-crujiente-grande.avif"
-//       alt="Sandwich de pollo con cebolla, lechuga y tomates"
-//       width="500"
-//       height="409"
-//     />
-//     <div class="card__links">
-//       <span class="material-symbols-outlined" title="More info">
-//         visibility
-//       </span>
-//       <span class="material-symbols-outlined" title="Like">
-//         favorite
-//       </span>
-//       <span class="material-symbols-outlined" title="Share">
-//         share
-//       </span>
-//     </div>
-//   </div>
-//   <div class="card__rating">
-//     <span class="material-symbols-outlined fill"> star </span>
-//     <span class="material-symbols-outlined fill"> star </span>
-//     <span class="material-symbols-outlined fill"> star </span>
-//     <span class="material-symbols-outlined fill"> star </span>
-//     <span class="material-symbols-outlined"> star_half </span>
-//   </div>
-//   <div class="card__body">
-//     <h2 class="card__title">Big Crunch Sandwich</h2>
-//     <div class="card__prices">
-//       <span class="card__prices-now">$6.29</span>
-//       <span class="card__prices-before">$7.39</span>
-//     </div>
-//     <p class="card__copy">
-//       Indulge in our crispy chicken burger, topped with cheese, fresh lettuce,
-//       tomato, onions and our special sauce. An irresistible explosion of flavor!
-//     </p>
-//   </div>
-//   <button class="btn btn__add-to-cart">
-//     <span class="material-symbols-outlined"> shopping_cart </span>
-//     Add to Cart
-//   </button>
-// </article>`
+const productsCardContainer = document.querySelector(".products__cards");
+
+function starRating(rating) {
+  const fullStars = Math.floor(rating);
+  const halfStar = rating % 1 !== 0;
+  let stars = "";
+
+  for (let i = 0; i < fullStars; i++) {
+    stars += '<span class="material-symbols-outlined fill"> star </span>';
+  }
+
+  if (halfStar) {
+    stars += '<span class="material-symbols-outlined"> star_half </span>';
+  }
+
+  for (let i = fullStars + halfStar; i < 5; i++) {
+    stars += '<span class="material-symbols-outlined"> star </span>';
+  }
+  return stars;
+}
+
+function createProduct({
+  id,
+  sale,
+  name,
+  src,
+  alt,
+  description,
+  priceNow,
+  rating,
+}) {
+  const div = document.createElement("article");
+  div.id = id;
+  div.classList.add("card");
+  div.innerHTML = `
+  ${sale ? `<span class="card__sale">-${sale}%</span>` : "<span></span>"}
+   <div class="card__image">
+     <img
+       loading="lazy"
+       src="${src}"
+       alt="${alt}"
+       width="500"
+       height="409"
+     />
+     <div class="card__links">
+       <span class="material-symbols-outlined" title="More info">
+         visibility
+       </span>
+       <span class="material-symbols-outlined" title="Like">
+         favorite
+       </span>
+       <span class="material-symbols-outlined" title="Share">
+         share
+       </span>
+     </div>
+   </div>
+   <div class="card__rating">
+     ${starRating(rating)}
+   </div>
+   <div class="card__body">
+     <h2 class="card__title">${name}</h2>
+     <div class="card__prices">
+       <span class="card__prices-now">$${priceNow}</span>
+       ${sale ? `<span class="card__prices-before">$${(priceNow + (priceNow * sale / 100)).toFixed(2)}</span>` : ""}
+     </div>
+     <p class="card__copy">
+       ${description}
+   </p>
+   </div>
+   <button class="btn btn__add-to-cart">
+     <span class="material-symbols-outlined"> shopping_cart </span>
+     Add to Cart
+   </button>
+  `;
+  productsCardContainer.appendChild(div);
+}
+
+products.forEach((product) => createProduct(product));
