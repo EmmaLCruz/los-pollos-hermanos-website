@@ -380,3 +380,74 @@ function createFlierCombos ({id, name, src, alt, description, price}) {
 }
 
 fliers.forEach((flier) => createFlierCombos(flier))
+
+// Renderizado de tarjetas Newsletter
+
+const drawnCards = [
+  {
+    id: 1,
+    src: "img/newsletter/hamburger_free.avif",
+    alt: "Icono paquete de hamburguesa.",
+    title: "Free Shipping on First Order",
+    description:
+      "Sign up for latest updates and get free shipping and fast delivery.",
+  },
+  {
+    id: 2,
+    src: "img/newsletter/best-taste.avif",
+    alt: "Icono bandeja de plata cubierta, acompañada de tres estrellas doradas.",
+    title: "Best Taste Guarantee",
+    description:
+      "We use high-quality ingredients to create food with exceptional flavor.",
+  },
+  {
+    id: 3,
+    src: "img/newsletter/food-cellphone.avif",
+    alt: "Icono de manos sosteniendo un celular donde se ve una bandeja de plata.",
+    title: "Variety of Dishes",
+    description:
+      "We give variety of dishes, desserts, drinks and much more.",
+  },
+  {
+    id: 4,
+    src: "img/newsletter/moto.avif",
+    alt: "Icono motocicleta de delivery con un reloj de aguja detras.",
+    title: "25 Minutes Delivery",
+    description:
+      "We deliver your food at the doorstep within an hour.",
+  },
+];
+
+const newsletterCardsContainer = document.querySelector(".newsletter__cards");
+
+function createNewsletterCards({
+  id,
+  src,
+  alt,
+  title,
+  description,
+}) {
+  const div = document.createElement("article");
+  div.id = id;
+  div.classList.add("newsletter__cards--content", "animation-item");
+  div.innerHTML = `
+  <div class="drawn-card" data-animation="up">
+    <figure class="drawn-card__image">
+      <img
+        loading="lazy"
+        src="${src}"
+        alt="${alt}"
+        width="512"
+        height="512"
+      />
+    </figure>
+    <h2 class="drawn-card__title">${title}</h2>
+    <p class="drawn-card__paragraph">
+      ${description}
+    </p>
+  </div>
+  `;
+  newsletterCardsContainer.appendChild(div);
+}
+
+drawnCards.forEach((card) => createNewsletterCards(card));
