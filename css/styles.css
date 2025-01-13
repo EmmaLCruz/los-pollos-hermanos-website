@@ -1416,6 +1416,7 @@ a{
 
 .footer__background-image img{
   width: var(--content-width);
+  height: var(--content-height);
   object-fit: cover;
   opacity: .2;
 }
