@@ -259,10 +259,10 @@ function createProduct({
   priceNow,
   rating,
 }) {
-  const div = document.createElement("article");
-  div.id = id;
-  div.classList.add("card");
-  div.innerHTML = `
+  const articleProducts = document.createElement("article");
+  articleProducts.id = id;
+  articleProducts.classList.add("card");
+  articleProducts.innerHTML = `
   ${sale ? `<span class="card__sale">-${sale}%</span>` : "<span></span>"}
    <div class="card__image">
      <img
@@ -302,7 +302,7 @@ function createProduct({
      Add to Cart
    </button>
   `;
-  productsCardContainer.appendChild(div);
+  productsCardContainer.appendChild(articleProducts);
 }
 
 products.forEach((product) => createProduct(product));
@@ -351,10 +351,10 @@ const fliers = [
 const combosCardsContainer = document.querySelector(".combos__cards");
 
 function createFlierCombos ({id, name, src, alt, description, price}) {
-  const divCombo = document.createElement("article")
-  divCombo.classList.add("flier", "animation-item");
-  divCombo.id = id;
-  divCombo.innerHTML = `
+  const articleCombo = document.createElement("article")
+  articleCombo.classList.add("flier", "animation-item");
+  articleCombo.id = id;
+  articleCombo.innerHTML = `
   <div class="flier__details" data-animation="show">
                 <h2 class="flier__title">${name}</h2>
                 <p class="flier__paragraph">
@@ -376,7 +376,7 @@ function createFlierCombos ({id, name, src, alt, description, price}) {
                 <h3 class="flier__subtitle">NEW</h3>
               </div>
   `;
-  combosCardsContainer.appendChild(divCombo)
+  combosCardsContainer.appendChild(articleCombo)
 }
 
 fliers.forEach((flier) => createFlierCombos(flier))
@@ -427,10 +427,10 @@ function createNewsletterCards({
   title,
   description,
 }) {
-  const div = document.createElement("article");
-  div.id = id;
-  div.classList.add("newsletter__cards--content", "animation-item");
-  div.innerHTML = `
+  const articleNewsletter = document.createElement("article");
+  articleNewsletter.id = id;
+  articleNewsletter.classList.add("newsletter__cards--content", "animation-item");
+  articleNewsletter.innerHTML = `
   <div class="drawn-card" data-animation="up">
     <figure class="drawn-card__image">
       <img
@@ -447,7 +447,7 @@ function createNewsletterCards({
     </p>
   </div>
   `;
-  newsletterCardsContainer.appendChild(div);
+  newsletterCardsContainer.appendChild(articleNewsletter);
 }
 
 drawnCards.forEach((card) => createNewsletterCards(card));
