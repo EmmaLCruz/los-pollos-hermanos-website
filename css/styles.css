@@ -1336,60 +1336,19 @@ a{
 
 /* Inicio: Sección Galería de Imágenes */
 
-.gallery__content{
+.section__gallery{
+  width: 100vw;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  background-color: red;
   display: flex;
-  align-items: center;
-  height: auto;
-  overflow: hidden;
-  background-color: #000;
 }
 
-.gallery__item{
-  height: var(--content-height);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.gallery__black-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  text-align: center;
-  width: 88%;
-  height: 88%;
-  background-color: rgba(0, 0, 0, .8);
-  opacity: 0;
-  transition: opacity var(--transition-duration) var(--transition-easing);
-}
-
-.gallery__zoom-out{
-  font-weight: 300;
-  font-size: var(--font-size-h2);
-  background-color: var(--color-secondary);
-  padding: var(--spacing-sm);
-  color: var(--color-text-light);
-}
-
-.gallery__image{
-  width: var(--content-width);
-  height: auto;
-}
-
-.gallery__image--img {
-  width: var(--content-width);
-  transition: transform 1s ease-in-out;
-}
-
-.gallery__item:hover > .gallery__black-box{
-  opacity: 1;
-}
-
-.lg-sub-html{
-  display: none;
+.section__gallery img{
+  width: calc(100% / 5);
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Fin: Sección Galería de Imágenes */
