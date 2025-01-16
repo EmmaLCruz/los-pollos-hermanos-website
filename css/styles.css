@@ -1339,9 +1339,6 @@ a{
 .section__gallery{
   width: 100vw;
   height: fit-content;
-  padding: 0;
-  margin: 0;
-  background-color: red;
   display: flex;
 }
 
