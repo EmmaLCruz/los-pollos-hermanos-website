@@ -15,7 +15,6 @@ enlaces.forEach((cadaEnlace, i) => {
 
 cerrar.addEventListener("click", () => {
   lightbox.classList.remove("active");
-  grande.setAttribute("src", "");
 });
 
 

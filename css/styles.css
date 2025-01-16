@@ -1337,12 +1337,12 @@ a{
 /* Inicio: Sección Galería de Imágenes */
 
 .ul{
-  width: 80%;
-  background-color: lightgray;
-  padding: 1em;
+  width: var(content-width);
+  /* background-color: lightgray; */
+  /* padding: 1em; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* gap: 1em; */
 }
 
 .ul .li{
@@ -1374,19 +1374,21 @@ a{
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  display: none;
+  opacity: 0;
+  transform: scale(1.1);
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
 }
 
 .lightbox.active{
-  display: flex;
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.lightbox .cerrar{
-  width: 6em;
-  height: 3em;
-  background-color: orange;
+.lightbox .cerrar.btn{
   margin-bottom: 1em;
-  cursor: pointer;
 }
 
 .lightbox .grande{
