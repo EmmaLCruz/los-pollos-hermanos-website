@@ -1336,63 +1336,6 @@ a{
 
 /* Inicio: Sección Galería de Imágenes */
 
-.ul{
-  width: var(content-width);
-  /* background-color: lightgray; */
-  /* padding: 1em; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* gap: 1em; */
-}
-
-.ul .li{
-  overflow: hidden;
-}
-
-.ul .img{
-  width: var(--content-width);
-  height: var(--content-height);
-  object-fit: cover;
-  transform: scale(1.12);
-  transition: all 0.5s ease-in-out;
-}
-
-.ul .li:hover .img{
-  transform: scale(1);
-}
-
-.lightbox{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5em;
-  flex-wrap: nowrap;
-  opacity: 0;
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
-  pointer-events: none;
-}
-
-.lightbox.active{
-  transform: scale(1);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.lightbox .grande{
-  width: 44%;
-  height: auto;
-  object-fit: cover;
-}
-
 /* Fin: Sección Galería de Imágenes */
 
 /* Inicio: Footer */
