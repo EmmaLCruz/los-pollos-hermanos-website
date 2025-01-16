@@ -1370,18 +1370,23 @@ a{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 5;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  display: none;
+}
+
+.lightbox.active{
+  display: flex;
 }
 
 .lightbox .cerrar{
-  width: 3em;
+  width: 6em;
   height: 3em;
   background-color: orange;
   margin-bottom: 1em;
+  cursor: pointer;
 }
 
 .lightbox .grande{
