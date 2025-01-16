@@ -1387,25 +1387,9 @@ a{
   pointer-events: auto;
 }
 
-.lightbox .cerrar.btn{
-  /* margin-bottom: 1.1em; */
-}
-
 .lightbox .grande{
   width: 44%;
   height: auto;
-  object-fit: cover;
-}
-
-.section__gallery{
-  width: 100vw;
-  height: fit-content;
-  display: flex;
-}
-
-.section__gallery img{
-  width: calc(100% / 5);
-  height: 100%;
   object-fit: cover;
 }
 
